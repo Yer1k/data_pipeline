@@ -7,16 +7,16 @@ RUN cd / && bash /quarto.sh
 
 COPY setup_conn.py $AIRFLOW_HOME
 
-User root
+USER root
 
-# RUN python $AIRFLOW_HOME/setup_conn.py
-# RUN apt-get update && \
-#     apt-get install -y --no-install-recommends \
-#     default-jdk
-
+RUN python $AIRFLOW_HOME/setup_conn.py
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
     default-jdk
+
+# RUN apt-get update && \
+#     apt-get install -y --no-install-recommends \
+#     default-jdk
 
 # export JAVA_HOME='/usr/lib/jvm/java-17-openjdk-amd64'
 # export PATH=$PATH:$JAVA_HOME/bin
