@@ -1,3 +1,19 @@
+dashboard_files/
+
+# policy
+trust-policy.json
+
+# data
+
+# logs
+logs/*
+*.log
+
+temp/*
+
+# DS_Store files
+.DS_Store
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
