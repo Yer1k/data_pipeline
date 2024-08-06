@@ -10,7 +10,7 @@ The architecture of the data pipeline is as follows:
 2. **`Postgres`** is used to store Airflow's metadata and the data to be processed.
 3. **`DuckDB`** is acted as a data warehouse to store the processed data.
 4. **`Quarto with Plotly`** are used to convert code in `markdown` format to html files that can be embedded in the app or servered as is.
-5. **`Apache Spark`** is used to process the data and run a [classification algorithm](./dags/user_analytics.py).
+5. **`Apache Spark`** is used to process the data and run a [classification algorithm](./dags/scripts/spark/random_text_classification.py).
 6. **`minio`**: To provide an S3 compatible open source storage system.
 
 
