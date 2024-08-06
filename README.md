@@ -14,7 +14,7 @@ The architecture of the data pipeline is as follows:
 6. **`minio`**: To provide an S3 compatible open source storage system.
 
 
-![flowchart](./screenshots/flowchart.png)
+![flowchart](./screenshots/airflow_flowchart.png)
 
 ## Screenshots
 
